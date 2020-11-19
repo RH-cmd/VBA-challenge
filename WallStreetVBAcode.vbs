@@ -125,4 +125,14 @@ For i = 2 to lastRowState
 
 Next i
 
+'Formatting the Bonus values
+Range("P2").value = Format(greatest_percent_inc_ticker, "Percent")
+Range("Q2").value = Format(greatest_percent_inc, "Percent")
+Range("P3").value = Format(greatest_percent_dec_ticker, "Percent")
+Range("Q3").value = Format(greatest_percent_dec, "Percent")
+Range("P4").value = greatest_volume_ticker
+Range("Q4").value = greatest_total_volume
+
+Next ws
+
 End Sub
