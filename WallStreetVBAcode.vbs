@@ -41,5 +41,9 @@ For i = 2 to lastRowState
 
     'Total stock volumes for each ticker
     stock_volume=stock_volume + cells(i,7).value
-    
+
+    'Once we get to a different ticket
+    If Cells(i + 1, 1).value <> ticker then
+    ticker_count = ticker_count + 1
+    Cells(ticker_count + 1, 9) = ticker
 End Sub
