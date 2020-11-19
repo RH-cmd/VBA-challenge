@@ -111,5 +111,18 @@ For i = 2 to lastRowState
         greatest_percent_inc = cells(i,11).value
         greatest_percent_inc_ticker = cells(i,9).value
     Endif
-    
+    'Ticker with greatest percent decrease
+    If cells(i,11).value < greatest_percent_dec then
+        greatest_percent_dec = cells(i,11).value
+        greatest_percent_dec_ticker = cells(i,9).value
+    Endif
+
+'Ticker with the greatest total volume
+    If cells(i,12).value > greatest_total_volume then
+        greatest_total_volume = cells(i,12).value
+        greatest_volume_ticker = cells(i,9).value
+    Endif
+
+Next i
+
 End Sub
