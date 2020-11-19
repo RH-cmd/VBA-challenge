@@ -53,4 +53,11 @@ For i = 2 to lastRowState
     'Yearly change per ticker
     yearly_change = (closing_price - opening_price)
     cells(ticker_count + 1, 10).value = yearly_change
+    
+    'Color coding yearly change value(green for positive, red for negative, )
+    If yearly_change > 0 then
+        cells(ticker_count + 1, 10).Interior.ColorIndex = 4
+    Elseif yearly_change < 0 then
+        cells(ticker_count + 1, 10).Interior.ColorIndex = 3
+    Endif
 End Sub
