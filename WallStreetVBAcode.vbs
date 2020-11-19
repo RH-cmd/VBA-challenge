@@ -82,4 +82,18 @@ Endif
 
 Next i
 
+'Bonus - Greatest increase, decrease, etc, 
+Dim greatest_percent_inc as double
+Dim greatest_percent_inc_ticker as string
+Dim greatest_percent_dec as double 
+Dim greatest_percent_dec_ticker as string
+Dim greatest_total_volume as double 
+Dim greatest_volume_ticker as string
+
+Range("O2").value = "Greatest % Percent"
+Range("O3").value = "Greatest % Percent"
+Range("O4").value = "Greatest Total Volume"
+Range("P1").value = "Ticker"
+Range("Q1").value = "Value"
+
 End Sub
