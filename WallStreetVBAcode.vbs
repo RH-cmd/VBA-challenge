@@ -103,4 +103,13 @@ greatest_percent_dec_ticker = cells(2,9).value
 greatest_total_volume = cells(2,12).value
 greatest_volume_ticker = cells(2,9).value
 
+'Loop through the list of tickers
+For i = 2 to lastRowState
+
+'Ticker with greatest percent increase
+    If cells(i,11).value > greatest_percent_inc then
+        greatest_percent_inc = cells(i,11).value
+        greatest_percent_inc_ticker = cells(i,9).value
+    Endif
+    
 End Sub
