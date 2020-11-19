@@ -33,5 +33,13 @@ stock_volume=0
 For i = 2 to lastRowState
   
     ticker=Cells(i,1).Value
+
+ 'Opening price per ticker
+    If opening_price=0 then
+        opening_price=cells(i,3).Value
+    Endif
+
+    'Total stock volumes for each ticker
+    stock_volume=stock_volume + cells(i,7).value
     
 End Sub
