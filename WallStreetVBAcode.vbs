@@ -22,4 +22,11 @@ lastRowState=ws.cells(rows.count,"A").End(xlUp).row
  ws.Range("K1").Value = "Percent Change"
  ws.Range("L1").Value = "Total Stock Volume"
 
+'Setting variables per worksheet
+ticker_count=0
+yearly_change=0
+opening_price=0
+percent_change=0
+stock_volume=0
+
 End Sub
