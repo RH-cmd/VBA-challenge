@@ -67,5 +67,6 @@ For i = 2 to lastRowState
     Else percent_change = (yearly_change / opening_price)
     Endif
 
+    'Format percent change from general to percent 
     Cells(ticker_count + 1, 11).value = format(percent_change, "Percent")
 End Sub
