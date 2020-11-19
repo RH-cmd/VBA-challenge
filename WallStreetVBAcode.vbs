@@ -69,4 +69,14 @@ For i = 2 to lastRowState
 
     'Format percent change from general to percent 
     Cells(ticker_count + 1, 11).value = format(percent_change, "Percent")
+
+    'Resetting opening price when changing to a different ticker
+    opening_price = 0
+
+    'Setting column L to total stock volume
+    cells(ticker_count + 1, 12).value = stock_volume
+
+    'Resetting total stock volume when changing to a different ticker
+    stock_volume = 0
+Endif
 End Sub
