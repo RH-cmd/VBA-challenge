@@ -29,4 +29,9 @@ opening_price=0
 percent_change=0
 stock_volume=0
 
+'Loop through ticker 
+For i = 2 to lastRowState
+  
+    ticker=Cells(i,1).Value
+    
 End Sub
