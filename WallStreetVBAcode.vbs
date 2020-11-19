@@ -16,18 +16,15 @@ ws.Activate
 'Last row of each worksheet
 lastRowState=ws.cells(rows.count,"A").End(xlUp).row
 
-'Adding Names to Columns
+'Adding Names to Columns/setting variables
  ws.Range("I1").Value = "Ticker"
+ ticker_count=0
  ws.Range("J1").Value = "Yearly Change"
+ yearly_change=0
  ws.Range("K1").Value = "Percent Change"
+ yearly_change=0
  ws.Range("L1").Value = "Total Stock Volume"
-
-'Setting variables per worksheet
-ticker_count=0
-yearly_change=0
-opening_price=0
-percent_change=0
-stock_volume=0
+ stock_volume=0
 
 'Loop through ticker 
 For i = 2 to lastRowState
@@ -95,5 +92,15 @@ Range("O3").value = "Greatest % Percent"
 Range("O4").value = "Greatest Total Volume"
 Range("P1").value = "Ticker"
 Range("Q1").value = "Value"
+
+lastRowState = ws.cells(rows.count, "I").End(xlUp).ROw
+
+'Intialize and set values of variables
+greatest_percent_inc = cells(2,11).value
+greatest_percent_inc_ticker = cells(2,9).value
+greatest_percent_dec = cells(2,11).value
+greatest_percent_dec_ticker = cells(2,9).value
+greatest_total_volume = cells(2,12).value
+greatest_volume_ticker = cells(2,9).value
 
 End Sub
