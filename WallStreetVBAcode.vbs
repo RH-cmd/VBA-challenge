@@ -46,4 +46,11 @@ For i = 2 to lastRowState
     If Cells(i + 1, 1).value <> ticker then
     ticker_count = ticker_count + 1
     Cells(ticker_count + 1, 9) = ticker
+
+    'Closing price per ticker
+    closing_price=cells(i,6).value
+
+    'Yearly change per ticker
+    yearly_change = (closing_price - opening_price)
+    cells(ticker_count + 1, 10).value = yearly_change
 End Sub
