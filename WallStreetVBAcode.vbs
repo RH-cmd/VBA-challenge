@@ -79,4 +79,7 @@ For i = 2 to lastRowState
     'Resetting total stock volume when changing to a different ticker
     stock_volume = 0
 Endif
+
+Next i
+
 End Sub
