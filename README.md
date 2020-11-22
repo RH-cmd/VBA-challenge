@@ -1,5 +1,5 @@
 # VBA-challenge
-The VBA of Wall Street
+***The VBA of Wall Street***
 
 #### This VBA script will analyze real stock market data by looping through all the stocks for each year and output the following information:
 <ul>
